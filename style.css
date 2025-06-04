@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "Recursive";
-    src: url(./Fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
+    src: url(./fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
 }
 
 :root {
@@ -34,6 +34,7 @@ body {
     font-family: "Recursive", sans-linear-bold;
     font-weight: 600;
     font-size: 35px;
+
 }
 
 .titulo h2 {
@@ -42,6 +43,7 @@ body {
     background-color: var(--roxo-pixelV);
     border-radius: 20px;
     padding: 10px 18px;
+
 }
 
 .titulo span {
@@ -58,7 +60,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 header {
@@ -89,13 +90,13 @@ header .container-grid {
     font-size: 20px;
     color: var(--branco);
     font-family: "Recursive", sans-linear;
+
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
-    /* para por tempo no sublinhar */
+
     transition: text-decoration 500ms ease;
 }
 
-/* para a cor sublinhar  */
 .menu a:hover {
     text-decoration-color: var(--verde-pixelV);
 }
@@ -103,12 +104,14 @@ header .container-grid {
 .conteudo-banner {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: space-between;
+
 }
 
 .conteudo-banner img {
     max-width: 380px;
     width: 50%;
+
 }
 
 .conteudo-banner p {
@@ -122,12 +125,14 @@ header .container-grid {
 .conteudo-banner ul {
     font-size: 30px;
     font-weight: 600;
-    text-transform: uppercase;
     font-family: "Recursive", sans-linear-bold;
     color: var(--verde-pixelV);
     list-style-type: none;
     padding: 0;
 }
+
+
+/* -------------- SOBRE --------------- */
 
 #sobre {
     display: flex;
@@ -144,40 +149,40 @@ header .container-grid {
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-#sobreh2 {
-    margin-right: 5px;
-}
-
 #sobre p {
-    font-family: "recursive", sans-linear;
+    font-family: "Recursive", sans-linear;
     font-size: 20px;
     text-align: justify;
     margin-top: 30px;
 }
 
-/* --------------------------------- PARALLAX -------------------------------------- */
+
+/* -------------PARALLAX--------------- */
+
 
 #parallax {
     height: 250px;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/parallax.svg);
+    /* background-image: url(./imgs/parallax.svg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/parallax.svg);
     background-attachment: fixed;
     background-size: 30%;
     margin-bottom: 120px;
 }
 
-/* ------------------------------ Serviços -------------------------- */
-
+/* ----------------SERVIÇOS--------------- */
 #servicos {
     margin-bottom: 120px;
+
 }
 
 #servicos .titulo {
     justify-content: center;
     margin-bottom: 55px;
+
 }
 
-#servicos h2 {
+#servivos {
     margin-left: 5px;
 }
 
@@ -197,7 +202,8 @@ header .container-grid {
 
     height: 250px;
     width: 100vw;
-    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%, rgba(71, 0, 207, 1)100%);
+    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%,
+            rgba(71, 0, 207, 1)100%);
 }
 
 #servicos .card {
@@ -211,8 +217,9 @@ header .container-grid {
 
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+
 }
 
 #servicos .card h3 {
@@ -221,18 +228,21 @@ header .container-grid {
     color: var(--roxo-pixelV);
     font-family: "Recursive", sans-linear-bold;
     text-align: center;
+
 }
 
 #servicos .card p {
     font-family: "Recursive", sans-linear;
-    font-size: 18px;
+    font: size 18px;
     margin-bottom: 20px;
     line-height: 1.5;
+
 }
 
 #servicos .card svg {
     color: var(--roxo-pixelV);
     height: 75px;
+
 }
 
 #servicos .card:hover {
@@ -247,28 +257,163 @@ header .container-grid {
     fill: var(--verde-pixelV);
 }
 
-/*---------------------- Cases de Sucesso ----------------------*/
+/* ------------Cases de Sucesso--------------*/
 
 #cases h2 {
     margin-right: 5px;
-
 }
 
-#cases{
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 50px;
-margin-bottom: 120px
+#cases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 120px;
 }
 
-#cases img{
+#cases img {
     height: 300px;
     border-radius: 40px;
 }
 
-#meuCarrossel{
+#meuCarrossel {
     max-width: 1170px;
-    width:90%
+    width: 90;
 }
 
+/* ----------------Contato----------------- */
+
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#contato .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#contato h2 {
+    margin-left: 5px;
+}
+
+#contato form {
+    width: 90%;
+    max-width: 980px;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 40px;
+    background-color: var(--Contato);
+    border: solid 3px var(--roxo-pixelV);
+
+    color: var(--preto);
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+}
+
+.campo-descricao textarea {
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo-label,
+.campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "Recursive", sans liner;
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--verde-pixelV);
+}
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--roxo-pixelV);
+    color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Recursive", sans-linear;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms;
+
+}
+
+#contato form button:hover {
+    background-color: var(--verde-pixelV);
+
+}
