@@ -330,33 +330,31 @@ header .container-grid {
     margin-bottom: 50px;
 }
 
-.campo-descricao {
+.campo-descricao{
     width: 60%;
-
-    text-align: left;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-between ;
 
     margin-bottom: 30px;
 }
 
-.campo input {
-    height: 40px;
+.campo input{
+height: 40px;
 
-    color: var(--preto);
-    background-color: var(--branco);
+color: var(--preto);
+background-color: var(--branco);
 
-    border: none;
-    border-radius: 4px;
+border: none;
+border-radius: 4px;
 
-    text-indent: 10px;
+text-indent: 10px;
 
-    outline: none;
+outline: none;
 }
 
-.campo-descricao textarea {
+.campo-descricao textarea{
     color: var(--preto);
     background-color: var(--branco);
 
@@ -371,18 +369,18 @@ header .container-grid {
 }
 
 .campo-label,
-.campo-descricao label {
+.campo-descricao label{
     margin-bottom: 15px;
 }
 
 .campo input,
-.campo-descricao textarea {
-    font-family: "Recursive", sans liner;
-    font-size: 17px;
+.campo-descricao textarea{
+font-family: "Recursive", sans liner;
+font-size: 17px;
 }
 
 .campo input::placeholder,
-.campo-descricao textarea::placeholder {
+.campo-descricao textarea::placeholder{
     color: #a0a0a0;
 }
 
@@ -391,7 +389,7 @@ header .container-grid {
     outline: 2px solid var(--verde-pixelV);
 }
 
-#contato form button {
+#contato form button{
     height: 40px;
     width: 60%;
 
@@ -410,10 +408,58 @@ header .container-grid {
     cursor: pointer;
 
     transition: background-color 500ms;
+}
+
+#contato form button:hover{
+    background-color: var(--verde-pixelV);
+}
+
+/* ----------Footer------------- */
+footer{
+    height: 250px;
+background-image: url(./imgs/footer.png);
+}
+
+footer img{
+    height: 90px;
+}
+
+footer .container-grid{
+    height: 100%;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.redes-sociais{
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p{
+    color: var(--branco);
+
+    font-family: "Recursive", sans-linear-bold;
+    font-size: 24px;
+}
+
+.icones-redes{
+    width: 240px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a{
+    color: var(--branco);
 
 }
 
-#contato form button:hover {
-    background-color: var(--verde-pixelV);
-
+.icones-redes a:hover{
+    color: var(--verde-pixelV);
 }
