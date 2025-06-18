@@ -1,0 +1,16 @@
+1.  identificar os elementos 
+
+2. separar as imagens 
+
+3. salvar as fonts 
+
+4. criar repositorio no GiHub
+
+5. clonar o repositorio
+
+6. fazer o index.html / style.css / pasta de img e de font / script.js 
+
+7. configurar o head 
+
+8. fazer a landing page em partes
+
